@@ -1,4 +1,7 @@
 
+from xml.sax import default_parser_list
+
+
 class Item:
 
     def __init__(self, title, price, shipping, isLocal, isAuth, isSoldOut, condition, brand, catagories, details, desc):
@@ -17,5 +20,3 @@ class Item:
 
     def __str__(self):
         return f'(name={self.title}, price={self.price}, shipping={self.shipping}, condition={self.condition}, brand={self.brand})'
-
-    
