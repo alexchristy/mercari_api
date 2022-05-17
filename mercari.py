@@ -52,6 +52,7 @@ class Mercari:
         
 
         shipping = ""
+        isShipped = True
         # Parse the shipping string
         if len(shipping_unparsed) > 1:
             for i in shipping_unparsed:
@@ -145,11 +146,12 @@ class Mercari:
         except:
             isSoldOut = False
 
-        item = Item(name, price, shipping, condition)
-
+        item = Item(name, price, shipping, condition, date, seller_reviews, brand, catagories, details, desc, isLocal, isAuth, isSoldOut, isShipped)
 
         return item
 
 
 mercari = Mercari
-item = mercari.get_item_info("https://www.mercari.com/us/item/m79584435042/")
+item = mercari.get_item_info("https://www.mercari.com/us/item/m72390986495/")
+
+item.display()
