@@ -28,10 +28,10 @@ class Item:
 
     def display(self):
 
-        print(f'\n======({self.title}})======')
+        print(f'\n======({self.title})======')
         print(f'Price: ${self.price} \nShipping: ${self.shipping}\nCondition: {self.condition} \nBrand: {self.brand} \n' \
             f'Catagories: {self.catagories}\nDetails: {self.details}\nDate: {self.date}\nDescription: {self.desc[0:25]}...\nAuthenticated: {self.isAuth}\n' \
-                f'Sold Out: {self.isSoldOut}\nReviews: {seller_reviews}\n')
+                f'Sold Out: {self.isSoldOut}\nReviews: {self.seller_reviews}\n')
                 
         return None
 
